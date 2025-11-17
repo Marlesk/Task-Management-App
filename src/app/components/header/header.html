@@ -1,0 +1,29 @@
+<div class="m-12 flex justify-between items-center">
+  <h1 class="text-2xl font-semibold leading-none">Διαχείρηση task</h1>
+  <div class="flex space-x-3 items-center">
+    <!-- input + search icon -->
+    <div class="relative">
+      <input type="text" (input)="onInput($event)"
+        class="border-none rounded-xl w-64 h-8 pl-10 text-black-text
+      placeholder:text-gray-400 bg-white-app focus:outline-blue-basic placeholder:text-sm"   
+        placeholder="Αναζήτηση"/>
+      <img src="images/search.png" alt="search"
+        class="absolute w-5 h-5 left-3 top-1/2 -translate-y-1/2"/>
+    </div>
+    <div class="relative flex items-center">
+      <!-- button + plus icon -->
+      <button type="button" class="w-32 h-8 pl-3 bg-blue-basic rounded-xl text-white-app 
+      cursor-pointer" (click)="openTaskForm()">Νέο task</button>
+      <img src="images/plus.png" alt="plus"
+        class="absolute w-3 h-3 left-3 top-1/2 -translate-y-1/2 filter invert brightness-0"/>
+    </div>
+  </div>
+  
+</div>
+
+
+
+
+  
+
+
