@@ -1,7 +1,8 @@
 # 📝 Tasks Management App
-![Angular](https://img.shields.io/badge/Angular-15+-dd0031?style=flat&logo=angular&logoColor=white)(https://angular.io/) 
-![Angular Material](https://img.shields.io/badge/Angular%20Material-Components-blue?style=flat&logo=angular&logoColor=white)(https://material.angular.io/) 
-![TypeScript](https://img.shields.io/badge/TypeScript-4.9-blue?style=flat&logo=typescript&logoColor=white)(https://www.typescriptlang.org/) 
+
+![Angular](https://img.shields.io/badge/Angular-15+-dd0031?style=flat&logo=angular&logoColor=white)
+![Angular Material](https://img.shields.io/badge/Angular%20Material-Components-blue?style=flat&logo=angular&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-4.9-blue?style=flat&logo=typescript&logoColor=white) 
 
 An **Angular Kanban-style project** for managing tasks.  
 The application provides functionality to create, edit, delete, and categorize tasks, helping users organize their work efficiently.
