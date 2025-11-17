@@ -1,1 +1,45 @@
 /* You can add global styles to this file, and also import other style files */
+@import "tailwindcss";
+
+@theme {
+  --color-white-app: #FFFFFF;
+  --color-black-text: #212121;
+
+  --color-light-background: #F0F8FF;
+  --color-kanban-col-background: #E8F0FF; 
+  --color-blue-basic: #0E89D0;
+  --color-grey-text: #707070;
+
+  --color-todo: #830ED0;
+  --color-inprogress: #DC782C;
+  --color-inreview: #0E89D0;
+  --color-completed: #098404;
+
+  --color-delete-task-button: #932222;
+}
+
+@font-face {
+  font-family: 'SF Pro Text';
+  src: url('public/font/SF_Pro_Text_Regular.ttf') format('truetype');
+}
+
+body {
+  font-family: 'SF Pro Text', sans-serif;
+  background-color: var(--color-light-background);
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.placeholder-bold::placeholder {
+  font-weight: 600;
+}
+
+.mat-mdc-dialog-surface {
+  border-radius: 0.5rem !important; 
+}
+
+.hanging-indent {
+  padding-left: 1.5rem;
+  text-indent: -1.5rem;
+}
