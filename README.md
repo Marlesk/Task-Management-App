@@ -1,15 +1,16 @@
 # 📝 Tasks Management App
 
-[![Angular](https://img.shields.io/badge/Angular-15+-dd0031?style=flat&logo=angular&logoColor=white)](https://angular.io/) 
-[![Angular Material](https://img.shields.io/badge/Angular%20Material-Components-blue?style=flat&logo=angular&logoColor=white)](https://material.angular.io/) 
-[![TypeScript](https://img.shields.io/badge/TypeScript-4.9-blue?style=flat&logo=typescript&logoColor=white)](https://www.typescriptlang.org/) 
+[![Angular](https://img.shields.io/badge/Angular-20.3-red?style=flat&logo=angular&logoColor=white)](https://angular.io/) 
+[![Angular Material](https://img.shields.io/badge/Angular%20Material-20.2-blue?style=flat&logo=angular&logoColor=white)](https://material.angular.io/) 
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.9-blue?style=flat&logo=typescript&logoColor=white)](https://www.typescriptlang.org/) 
+[![TailwindCSS](https://img.shields.io/badge/TailwindCSS-3+-06B6D4?style=flat&logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
 
 An **Angular Kanban-style project** for managing tasks.  
 The application provides functionality to create, edit, delete, and categorize tasks, helping users organize their work efficiently.
 
 ---
 
-## 📋 Overview
+## 🚀 Features
 
 The app simulates a **virtual Kanban board**, where each task has a status and can be moved between different levels.  
 Key features include:
@@ -19,10 +20,9 @@ Key features include:
 ➕ Create new tasks  
 ✏️ Edit existing tasks  
 🗑️ Delete tasks  
-📦 Move tasks between different status levels
-
-### ⏳ Task Status Levels
-
+🏷️ Tag support
+🔄 Move tasks between different status levels
+⏳ 4 Task Status Stages:
 - **To Do**  
 - **In Progress**  
 - **In Review**  
@@ -30,15 +30,17 @@ Key features include:
 
 ---
 
-## ⚙️ Technical Specifications
+## 🧩 Tech Stack
 
-### ✨ API Configuration
-
-A **Postman collection** is provided for testing API calls.
+- Angular 20
+- TypeScript
+- TailwindCSS
+- Angular CDK Dialog
+- Custom API backend
 
 ---
 
-### 🔑 Environments
+## 🔑 Environment Setup
 
 The Angular project uses **environment files** for configuration:
 - `src/environments/environment.ts` → for development
@@ -56,10 +58,9 @@ export const environment = {
 };
 
 ```
-
 ---
 
-## 💻 Installation & Setup
+## 📦 Installation & Setup
 
 Clone the repository:
 
@@ -79,6 +80,13 @@ Run the app:
 ```bash
 ng serve
 ```
+---
+
+## ✨ API Configuration
+
+A **Postman collection** is provided for testing API calls.
+
+---
 
 ## 👨‍💻 Author
 
