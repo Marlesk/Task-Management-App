@@ -20,9 +20,9 @@ Key features include:
 ➕ Create new tasks  
 ✏️ Edit existing tasks  
 🗑️ Delete tasks  
-🏷️ Tag support
-🔄 Move tasks between different status levels
-⏳ 4 Task Status Stages:
+🏷️ Tag support  
+🔄 Move tasks between different status levels  
+⏳ 4 Task Status Stages:  
 - **To Do**  
 - **In Progress**  
 - **In Review**  
