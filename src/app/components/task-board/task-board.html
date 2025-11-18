@@ -18,8 +18,14 @@
       @for (task of getTasksByStatus(col); track task._id) {
         <div class="bg-white rounded-lg shadow p-3 mb-3 flex flex-col space-y-2 mx-2">
           <!-- Τίτλος -->
-          <div class="font-semibold text-black-text mb-3">{{ task.title }}</div>
-
+          <div class="flex justify-between items-center">
+            <div class="font-semibold text-black-text mb-3">{{ task.title }}</div>
+            <!-- Button details -->
+            <button class="cursor-pointer" (click)="openDetailModal(task)">
+              <img src="images/dots.png" alt="dots" class="w-5 h-5">
+            </button>
+          </div>
+          
           <!-- Tag -->
           <div class="max-w-max text-sm text-black-text rounded-xl px-2 py-1 mb-3 bg-light-background">
             {{ getTagName(task.tag_id) }}

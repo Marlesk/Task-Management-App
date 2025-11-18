@@ -7,6 +7,7 @@ import { Tag } from 'src/app/shared/interfaces/tag';
 import { TaskService } from 'src/app/shared/services/task/task.service';
 import { TagService } from 'src/app/shared/services/tag/tag.service';
 import { TaskEdit } from '../task-edit/task-edit';
+import { TaskDetail } from '../task-detail/task-detail';
 
 @Component({
   selector: 'app-task-board',
@@ -60,6 +61,15 @@ export class TaskBoard {
   // Ανοίγει το modal για επιβεβαίωση διαγραφής
   openEditModal(task: Task) {
     this.dialog.open(TaskEdit, {
+      width: '700px',
+      disableClose: true,
+      data: { task: task, tags: this.tags }
+    });
+  }
+
+  // Ανοίγει το modal για περισσότερες λεπτομέρειες
+  openDetailModal(task: Task) {
+    this.dialog.open(TaskDetail, {
       width: '700px',
       disableClose: true,
       data: { task: task, tags: this.tags }
