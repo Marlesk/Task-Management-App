@@ -1,0 +1,62 @@
+<div class="relative bg-white-app">
+  <!-- Κουμπί κλεισίματος -->
+  <button (click)="closeDialog()" class="absolute top-4 right-4 cursor-pointer">
+    <div class="flex items-center text-black-text rounded-xl px-3 py-1 bg-kanban-col-background">
+      <span class="text-gray-500 text-xl font-bold">X</span>
+    </div>
+  </button>
+  <div class="flex flex-col ">
+    <form [formGroup]="taskForm">
+      <h2 class="font-medium text-lg pt-5 mb-5 pl-4 text-center">Λεπτομέρειες task</h2>
+      <!-- Τίτλος + Status -->
+      <div class="bg-kanban-col-background p-5">
+        <div class="flex justify-between items-center mb-2">
+          <label for="title" class="text-sm font-medium text-black-text">Τίτλος</label>
+            <!-- Status (read-only) -->
+            <div class="flex items-center text-black-text rounded-lg pl-3 pr-6 py-1 bg-white-app">
+              <div class="w-1 h-4 rounded mr-2"
+                  [ngClass]="{
+                    'bg-todo': data.task.status === 'to_do',
+                    'bg-inprogress': data.task.status === 'in_progress',
+                    'bg-inreview': data.task.status === 'in_review'
+                  }">
+              </div>
+              <span class="font-medium">{{ statusDisplayName(data.task.status) }}</span>
+            </div>
+        </div>
+        <!-- Τίτλος-->
+        <input id="title" type="text" formControlName="title" class="w-full rounded-lg bg-white-app p-3 
+          focus:outline-none" readonly placeholder="Πληκτρολογήστε τίτλο του task"
+        />
+      </div>
+      <div class="flex flex-col bg-kanban-col-background p-5">
+        <!-- Πεδίο Περιγραφής -->
+        <label for="description" class="text-sm font-medium text-black-text mb-2">
+          Περιγραφή Task
+        </label>
+        <textarea id="description" rows="3" formControlName="description"
+          class="resize-none rounded-lg bg-white-app p-3 focus:outline-none"
+          placeholder="Πληκτρολογήστε την περιγραφή εδώ..."></textarea>
+        <!-- Πεδίο Τag -->
+        <div class="flex space-x-10">
+          <div class="mt-5 flex flex-col mb-2 relative">
+            <label for="tags" class="text-sm font-medium text-black-text mb-2">Tag του task</label>
+            <input id="tags" class="w-40 px-3 py-2 rounded-xl bg-white-app focus:outline-none appearance-none" [value]="getTagName(data.task.tag_id)"/>
+          </div> 
+          <!-- Πεδίο Προτεραιότητα -->
+          <div class="mt-5 flex flex-col mb-2 relative">
+            <label for="priority" class="text-sm font-medium text-black-text mb-2">Προτεραιότητα</label>
+            <input id="priority" type="number" formControlName="priority" [value]="data.task.priority" readonly
+              class="text-center appearance-none focus:outline-none px-1 py-2 bg-white-app rounded-xl"
+            />
+          </div> 
+        </div>  
+      </div>
+    </form>
+  </div>
+
+</div>
+
+
+
+
