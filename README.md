@@ -19,6 +19,7 @@ Key features include:
 🔍 Local task search  
 ➕ Create new tasks  
 ✏️ Edit existing tasks  
+📝 View task details  
 🗑️ Delete tasks  
 🏷️ Tag support  
 🔄 Move tasks between different status levels  
